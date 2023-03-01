@@ -1,16 +1,18 @@
 name: linting, testing, building
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 env:
    HOMEBREW_NO_INSTALL_CLEANUP: 1
 on:
   push:
-    branches: [ master ]
+    branches:  [ master, develop ]
   pull_request:
-    branches: [ master ]
+    branches:  [ master, develop ]
 jobs:
   pipeline:
-    runs-on: macos-latest
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
+        os: [ ubuntu-latest ]
         node-version: [ 17.x ]
 
     steps:
