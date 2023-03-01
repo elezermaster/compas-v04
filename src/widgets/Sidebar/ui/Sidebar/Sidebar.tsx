@@ -14,7 +14,7 @@ interface SidebarProps {
 export const Sidebar = ({ className }: SidebarProps) => {
     const [collapsed, setCollapsed] = useState(false);
     // const toggleSidebar = useContext(SidebarContext);
-    console.log('collapsed from side', collapsed);
+    // console.log('collapsed from side', collapsed);
     const onToggle = () => {
         setCollapsed((prev) => !prev);
         // useSidebar()

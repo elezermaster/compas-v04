@@ -1,12 +1,11 @@
-import React, { useContext, useState } from 'react';
+/* eslint-disable i18next/no-literal-string */
+
 import { classNames } from 'shared/lib/classNames/classNames';
 import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
-import { Button, ThemeButton } from 'shared/ui/Button/Button';
+// import { Button, ThemeButton } from 'shared/ui/Button/Button';
 // import { SidebarContext,SidebarProvider, useSidebar } from 'app/providers/SidebarProvider';
-import BurgerClosed from 'shared/assets/icons/burger-closed.svg';
-import BurgerOpened from 'shared/assets/icons/burger-open.svg';
-import { Theme, useTheme } from 'app/providers/ThemeProvider';
+// import { Theme, useTheme } from 'app/providers/ThemeProvider';
 import { LangSwitcher } from 'widgets/LangSwitcher/LangSwitcher';
 import { useTranslation } from 'react-i18next';
 import cls from './Navbar.module.scss';
@@ -16,15 +15,9 @@ interface NavbarProps {
 }
 
 export const Navbar = ({ className }: NavbarProps) => {
-    const { theme, toggleTheme } = useTheme();
+    // const { theme, toggleTheme } = useTheme();
     const { t } = useTranslation();// 'home');
-    // const [collapsed, setCollapsed] = useState(useContext(SidebarContext))
-    // const onToggle = () => {
-    //     setCollapsed(prev => !prev)
-    //     //useSidebar()
-    //     console.log('collapsed in nav',collapsed);
 
-    // }
     return (
         <div className={classNames(cls.navbar, {}, [className])}>
 
