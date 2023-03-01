@@ -13,6 +13,10 @@ export interface ThemeContextProps {
     setTheme?: (theme: Theme) => void
 }
 
-export const ThemeContext = createContext<ThemeContextProps>({});
+export const ThemeContext = createContext<ThemeContextProps>({
+    theme: Theme.DARK,
+    // eslint-disable-next-line no-unused-vars
+    setTheme: () => ({}),
+});
 
 export const LOCAL_STORAGE_THEME_KEY = 'theme';
