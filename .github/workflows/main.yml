@@ -1,4 +1,6 @@
 name: linting, testing, building
+env:
+   HOMEBREW_NO_INSTALL_CLEANUP: 1
 on:
   push:
     branches: [ master ]
