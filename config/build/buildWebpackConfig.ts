@@ -1,7 +1,7 @@
 import webpack from 'webpack';
 import { buildDevServer } from './buildDevServer';
 import { buildLoaders } from './buildLoaders';
-import { biuldPlugins } from './buildPlugins';
+import { buildPlugins } from './buildPlugins';
 import { buildResolves } from './buildResolves';
 import { BuildOptions } from './types/config';
 
@@ -21,7 +21,7 @@ export function buildWebpackConfig(options: BuildOptions)
             clean: true,
         },
         devtool: isDev ? 'inline-source-map' : undefined,
-        plugins: biuldPlugins(options),
+        plugins: buildPlugins(options),
         devServer: isDev ? buildDevServer(options) : undefined,
         stats: {
             children: true,
