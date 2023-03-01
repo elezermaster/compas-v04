@@ -1,0 +1,36 @@
+.navbar {
+    width: 100%;
+    height: var(--navbar-height);
+    background: var(--bg-color-inverted);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: flex-end;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    //height: 100vh;
+}
+
+.linksRight {
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    //display: flex;
+    flex-direction: row;
+    //flex-wrap: wrap;
+    //height: 100vh;
+}
+
+.mainLink {
+    margin-right: 15px;
+    width: 80px;
+}
+
+.link {
+    flex: 1 0 5%;
+    /* allows space for margins */
+}

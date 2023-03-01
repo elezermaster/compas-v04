@@ -1,0 +1,9 @@
+# ignores folder contents
+/tests/bad-json
+
+# json error (same with ** or *)
+/tests/bad-json/**
+
+# ignores folder contents
+/tests/bad-json
+!/tests/bad-json/index.js
