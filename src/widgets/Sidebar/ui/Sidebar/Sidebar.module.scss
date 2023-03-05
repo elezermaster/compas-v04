@@ -5,6 +5,9 @@
 
     position: relative;
     transition: width 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .collapsed {
@@ -17,4 +20,47 @@
     display: flex;
     justify-content: center;
     width: 100%;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+
+    align-self: flex-start;
+    //align-content: center;
+    margin: auto;
+    margin-top: 20px;
+    opacity: 1;
+    transition: 1.0s opasity;
+}
+
+.mainLink {
+    //margin-left: 30px;
+    //margin-top: 40px;
+    font-size: 36px;
+    align-self: flex-start;
+    align-content: center;
+}
+
+.iconLink {
+    //margin: auto;
+    margin-top: 40px;
+    align-self: center;
+    text-align: center;
+
+    //display: flex;
+    align-content: center;
+    // border: 1px solid red;
+}
+
+.bottomLinks {
+    display: flex;
+    //margin-top: 40px;
+    align-self: center;
+    //text-align: center;
+    flex-direction: column-reverse; //display: flex;
+    //align-content: center;
+    // border: 1px solid red;
+    justify-content: flex-end;
+    margin-bottom: 30px;
 }
